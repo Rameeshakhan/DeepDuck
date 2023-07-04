@@ -1,0 +1,51 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-family: Raleway;
+    padding: 0px 50px 49px 50px;
+  }
+  
+  .div1 {
+    text-align: left;
+    font-size: 12px;
+    margin-left: 100px;
+  }
+  
+  .div1Item {
+    background: #282828;
+    padding: 4px;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 10px 0px;
+  }
+  
+  .div3 {
+    text-align: left;
+    font-size: 12px;
+  }
+  
+  .div3 > p {
+    margin: 5px 0px;
+    padding: 0;
+    text-align: left;
+  }
+  
+  /* Responsive Styles for Mobile Screens */
+  @media (max-width: 768px) {
+    .gridContainer {
+      grid-template-columns: 1fr;
+      padding: 0 10px;
+    }
+
+    .div1Item {
+      margin: 10px 20px;
+    }
+  }
+  
