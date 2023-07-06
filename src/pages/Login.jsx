@@ -5,6 +5,7 @@ import { FaUser } from 'react-icons/fa';
 import { BiSolidLockOpenAlt } from 'react-icons/bi';
 import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
+import deepDuck from "../assets/images/deepDuck.png"
 
 const Login = () => {
 const navigate = useNavigate()
@@ -12,7 +13,10 @@ const navigate = useNavigate()
     return (
         <>
             <div className={styles.loginContainer}>
-                <Navbar />
+            <Navbar
+                    deepDuckImage={deepDuck}
+                    optionColor= "#888888"
+                />
                 <form className={styles.formContainer}>
                     <h1 className={styles.heading}>Log in</h1>
                     <div className={styles.inputContainer}>
