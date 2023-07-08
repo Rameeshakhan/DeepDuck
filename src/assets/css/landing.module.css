@@ -125,16 +125,15 @@
    .image {
      height: 300px;
      width: 270px;
-     margin-top: 20%;
+     margin-top: 50px;
    }
 
    .SixInlineDiv{
       justify-content: center;
-
    }
 
    .divItem{
-      margin-top: 40vh;
+      margin-top: 20vh;
       height: 100px;
       /* width: ; */
       margin-bottom: 30px;

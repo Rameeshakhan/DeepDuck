@@ -3,7 +3,7 @@ import image1 from "../../assets/images/LandingSec2.png";
 import stick from "../../assets/images/stick.png";
 import arrow from "../../assets/images/arrowBtn.png";
 import { useNavigate } from 'react-router-dom';
-
+import styles from "../../assets/css/res.module.css"
 
 const Section2 = () => {
     const navigate = useNavigate()
@@ -21,7 +21,8 @@ const Section2 = () => {
                 background: "White",
                 padding: "06%",
                 display: "flex" 
-            }}>
+            }}
+            >
                 <div style={divStyles}>
                 <div style={{
                         display: "flex",

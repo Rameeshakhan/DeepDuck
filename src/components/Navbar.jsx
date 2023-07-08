@@ -14,6 +14,39 @@ const Navbar = ( {deepDuckImage, optionColor}) => {
     setOpen(!open);
   };
 
+
+  const list={
+    background: "#1E1E1E",
+    margin : "10px 20px ",
+    width: "90%",
+    borderRadius: "10px",
+    fontFamily: "Raleway"
+  }
+
+  const signupBtn={
+    width: "90%",
+    margin: "20px 20px 10px 20px",
+    backgroundColor: "#FFD600",
+    color: "white",
+    border: "none",
+    fontFamily: "Raleway",
+    padding: "10px",
+    borderRadius: "10px",
+    fontSize: "14px"
+  }
+
+  const loginBtn={
+    width: "90%",
+    margin: "0px 20px 0px 20px",
+    backgroundColor: "#1E1E1E",
+    color: "white",
+    border: "none",
+    fontFamily: "Raleway",
+    padding: "10px",
+    borderRadius: "10px",
+    fontSize: "14px"
+  }
+
   return (
     <div style={{ display: 'flex', alignItems: 'center', padding: '20px', justifyContent: 'space-between' }}>
 
@@ -33,24 +66,24 @@ const Navbar = ( {deepDuckImage, optionColor}) => {
             <MenuIcon sx={{color: optionColor}}/>
           </IconButton>
 
-          <Drawer anchor="right" open={open} onClose={handleToggle} PaperProps={{ sx: { backgroundColor: 'black', color: 'white' } }}>
-            <List style={{ width: '200px' }}>
-              <ListItem button onClick={() => navigate('/login')}>
-                <ListItemText primary="Log In" />
-              </ListItem>
-              <ListItem button onClick={() => navigate('/signup')}>
-                <ListItemText primary="Sign Up" />
-              </ListItem>
-              <ListItem button>
+          <Drawer anchor="right" open={open} onClose={handleToggle} PaperProps={{ sx: { backgroundColor: 'black', color: 'white' , textAlign: "left" , margin : "20px auto", width: "300px"} }}>
+            <List style={{ width: '300px' }}>
+        
+              <ListItem button sx={list}>
                 <ListItemText primary="Swap it" />
               </ListItem>
-              <ListItem button>
+              <ListItem button sx={list}>
                 <ListItemText primary="Feature" />
               </ListItem>
-              <ListItem button onClick={()=> navigate("/pricing")}>
+              <ListItem button onClick={()=> navigate("/pricing")} sx={list}>
                 <ListItemText primary="Pricing"  />
               </ListItem>
             </List>
+            <button style={signupBtn} onClick={() => navigate('/signup')}>Sign Up</button>
+            <button style={loginBtn}onClick={() => navigate('/login')} >Log in</button>
+         <Typography 
+         sx={{textAlign: "center" , fontSize: "12px" , color: "#5E5E5E", margin: "10px", padding: "10px", cursor: "pointer"}}
+         > <span onClick={() => navigate('/policy')}>Terms & Services </span>  |  <span  onClick={() => navigate('/policy')}> Privacy Policy</span></Typography>
           </Drawer>
         </>
       ) : (
