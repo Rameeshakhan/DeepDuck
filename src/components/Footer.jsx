@@ -4,8 +4,10 @@ import { HiOutlineMail } from "react-icons/hi"
 import styles from "../assets/css/footer.module.css"
 import linkedin from "../assets/images/linkedIn.png"
 import twitter from "../assets/images/twitter.png"
+import { useNavigate } from 'react-router-dom';
 
 const Footer = (color) => {
+    const navigate = useNavigate()
 
     return (
         <>
@@ -40,12 +42,12 @@ const Footer = (color) => {
                 </div>
                 <div className={styles.gridItem}>
                     <div className={styles.div3}>
-                        <p>Legal</p>
+                        <p onClick={()=>navigate("/policy")}>Legal</p>
                         <div className={styles.div3Item}>
-                            <p>Terms and Services</p>
+                            <p onClick={()=>navigate("/policy")}>Terms and Services</p>
                         </div>
                         <div className={styles.div3Item}>
-                            <p> Privacy Policy</p>
+                            <p onClick={()=>navigate("/policy")}> Privacy Policy</p>
                         </div>
                         <div className={styles.div13tem}>
                             <p> Refund Policy</p>

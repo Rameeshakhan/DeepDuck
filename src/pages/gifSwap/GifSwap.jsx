@@ -17,7 +17,7 @@ const GifSwap = () => {
                  margin: "0px"
             }}>
                 <Navbar
-                    deepDuck={deepDuck}
+                    deepDuckImage={deepDuck}
                     optionColor= "#888888"
                 />
                 <div style={{

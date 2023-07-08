@@ -19,13 +19,14 @@ const Navbar = ( {deepDuckImage, optionColor}) => {
 
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <picture>
-          <img src={logo} alt="Logo" height="39px" width="47px" />
+          <img src={logo} alt="Logo" height="39px" width="47px"
+          onClick={()=> navigate("/")}
+          />
         </picture>
         <span style={{ marginLeft: '10px' }}>
           <img src={deepDuckImage} alt="Logo" height="17px" width="86px" />
         </span>
       </div>
-
       {isMobile ? (
         <>
           <IconButton edge="start" color="inherit" aria-label="menu" onClick={handleToggle}>
@@ -46,8 +47,8 @@ const Navbar = ( {deepDuckImage, optionColor}) => {
               <ListItem button>
                 <ListItemText primary="Feature" />
               </ListItem>
-              <ListItem button>
-                <ListItemText primary="Pricing" />
+              <ListItem button onClick={()=> navigate("/pricing")}>
+                <ListItemText primary="Pricing"  />
               </ListItem>
             </List>
           </Drawer>
@@ -61,7 +62,7 @@ const Navbar = ( {deepDuckImage, optionColor}) => {
       <Typography variant="p" style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px" }}>
         Feature
       </Typography>
-      <Typography variant="p" style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px"  }}>
+      <Typography variant="p" onClick={()=> navigate("/pricing")} style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px"  }}>
         Pricing
       </Typography>
           </div>

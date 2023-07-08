@@ -27,7 +27,8 @@ const navigate = useNavigate()
                         <BiSolidLockOpenAlt className={styles.icon} />
                         <input type="text" className={styles.inputField} placeholder="Password" />
                     </div>
-                    <button className={styles.button}>LOGIN</button>
+                    <button className={styles.button}
+                    onClick={()=> navigate("/main")}>LOGIN</button>
                     <p 
                     className={styles.text}
                     onClick={()=> navigate("/signup")}

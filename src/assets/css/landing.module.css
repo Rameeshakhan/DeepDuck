@@ -1,4 +1,153 @@
-.LandingContainer{
+.LandingContainer {
    background-color: black;
    color: white;
-}
+   overflow-x: hidden;
+   
+   overflow-y: hidden;
+ }
+ 
+ .intro-section-container {
+   position: relative;
+   background-size: cover;
+   background-position: center;
+   font-family: "Raleway";
+ }
+ 
+ .grid-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+ }
+ 
+ .grid-item {
+   background-color: inherit;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center; */
+   align-items: center;
+   height: 400px;
+   width: 100%;
+ }
+ 
+ .image {
+   height: 396px;
+   width: 380px;
+ }
+ 
+ .swapBtn {
+   background-color: #FFD600;
+   border: none;
+   outline: none;
+   padding: 10px 30px;
+   border-radius: 12px;
+   color: white;
+   font-size: 20px;
+   display: inline-block;
+   margin-right: 10px;
+ }
+ 
+ .arrow {
+   display: inline-block;
+   vertical-align: middle;
+ }
+
+ .arrowBtn{
+   text-align: center;
+ }
+
+ .leftside{
+   display: flex;
+   flex-direction: column;
+   padding-left: 20vh;
+   padding-top: 30px;
+   align-items: flex-start;
+ }
+
+ .SixInlineDiv {
+   /* border: 1px solid white; */
+   /* padding: 20px 0px; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 5px 25vh;
+ }
+ 
+ .divItem {
+   display: inline-flex;
+   flex-direction: column;
+   /* border: 1px solid white; */
+   /* width: 100%; */
+   width: fit-content;
+   margin: 0px 05px 0px 0px;
+   border: 3px solid #25282C;
+   border-radius: 12px;
+ }
+
+ .img{
+   margin: 0px;
+   background-color: #25282C;
+   padding: 4px;
+   border-bottom: 0px solid #25282C;
+ }
+
+ .desc{
+   padding: 0px;
+   margin: 0px;
+   background-color: #25282C;
+   padding: 4px;
+   text-align: center;
+ }
+
+ @media (max-width: 800px) {
+   .grid-container {
+     grid-template-columns: 1fr;
+   }
+ 
+   .grid-item {
+     padding: 5px 40px;
+     justify-content: flex-start;
+     height: 200px;
+   }
+
+   .arrow {
+      margin-left: 20px;
+      display: none;
+    }
+ 
+   .leftside{
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+      padding: 20px;
+    }
+
+   .image {
+     height: 300px;
+     width: 270px;
+     margin-top: 20%;
+   }
+
+   .SixInlineDiv{
+      justify-content: center;
+
+   }
+
+   .divItem{
+      margin-top: 40vh;
+      height: 100px;
+      /* width: ; */
+      margin-bottom: 30px;
+
+   }
+ }
+
+ @media (max-width: 800px) {
+   .block-divs {
+     display: block;
+   }
+ 
+   .rotate-image {
+     display: none;
+   }
+ }
