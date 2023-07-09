@@ -1,5 +1,5 @@
 import React from 'react'
-import deepDuck from "../assets/images/DeepDuck.png"
+import deepDuck from "../assets/images/deepDuck.png"
 import Navbar from '../components/Navbar2'
 import image from "../assets/images/GalleryNoContent.png"
 
