@@ -2,7 +2,7 @@ import { BiSolidPhone, BiLogoWhatsapp } from 'react-icons/bi';
 import { BsFacebook } from "react-icons/bs"
 import { HiOutlineMail } from "react-icons/hi"
 import styles from "../assets/css/footer.module.css"
-import linkedin from "../assets/images/linkedIn.png"
+import linkedin from "../assets/images/linkedin.png"
 import twitter from "../assets/images/twitter.png"
 import { useNavigate } from 'react-router-dom';
 
