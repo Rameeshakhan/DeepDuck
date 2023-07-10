@@ -55,7 +55,7 @@ const Section4 = () => {
                 className={styles.gifSection5main}
                 >
                     <div style={divStyles}>
-                        <img src={imageSwap} alt="" />
+                        <img src={imageSwap} alt="" height="100" width="110" />
                         <h2 style={{padding:"0px", margin:"0px",fontFamily: "Raleway",}}>Swap Face on <span style={gradientText}>Video</span></h2>
                         <p style={{padding:"0px", margin:"0px",fontFamily: "Raleway",fontSize: "14px",}}>Using a high quality video, upload your base and video image now.</p>
                         <p style={{
@@ -72,7 +72,7 @@ const Section4 = () => {
                         >{`>>TRY NOW`}</p>
                     </div>
                     <div style={divStyles}>
-                        <img src={gifSwao} height="125px" width="135px" alt="" />
+                        <img src={gifSwao} height="100" width="110" alt="" />
                         <h2 style={{padding:"0px", margin:"0px",fontFamily: "Raleway",}}>Swap Face on <span style={gradientText}>GIF</span></h2>
                         <p style={{padding:"0px", margin:"0px",fontFamily: "Raleway",fontSize: "14px",}}>Have a favorite GIF ? Apply a face and go to converting!</p>
                         <p style={{
