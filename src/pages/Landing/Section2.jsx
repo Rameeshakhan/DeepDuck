@@ -60,7 +60,7 @@ const Section2 = () => {
 
                                 onClick={()=> navigate("/imageswap")}
                             >Try Image Swap</button>
-                            <img src={arrow} height="17px" width="60px" />
+                            <img src={arrow} height="17px" width="60px" className={styles.btnArrow} />
                         </div>
                     </div>
                 </div>

@@ -153,6 +153,9 @@
     padding: 20px 5vw;
   }
 
+  .btnArrow{
+    display: none;
+  }
   .section2Content {
     display: flex;
     flex-direction: column;
