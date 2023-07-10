@@ -69,11 +69,12 @@ const Section4 = () => {
     const navigate = useNavigate()
 
     const divStyles = {
-        margin: "10px",
-        padding: "10px 20px 10px 20px",
+        // margin: "10px",
+        padding: "10px 10px 10px 10px",
         width: "100%",
         display: "flex",
         flex: 1,
+        // border: "1px solid white",
         alignItems: "center"
     };
 
