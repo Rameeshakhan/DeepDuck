@@ -3,8 +3,12 @@ import imageSwap from "../../assets/images/videoSwap-pic.png"
 import gifSwao from "../../assets/images/imageSwap-play.png"
 import arrow from "../../assets/images/tryArrow.png"
 import Footer from '../../components/Footer'
+import styles from "../../assets/css/res.module.css"
+import { useNavigate } from 'react-router-dom'
 
 const Section5 = () => {
+
+    const navigate = useNavigate()
 
     const divStyles = {
         margin: "20px",
@@ -27,7 +31,7 @@ const Section5 = () => {
             <div style={{
                 background: "white",
                 color: "black",
-                padding: "50px",
+                // padding: "50px",
                 textAlign: "center",
             }}>
                 <h1 style={{
@@ -37,14 +41,13 @@ const Section5 = () => {
                     lineHeight: "34px",
                     letterSpacing: "0em",
                 }}>Other Exciting Deep Duck Features</h1>
-                <div style={{
-                    display: "flex",
-                    justifyContent: "center",
-                }}>
+                <div
+                    className={styles.gifSection5main}
+                >
                     <div style={divStyles}>
                         <img src={imageSwap} alt="" />
-                        <h2 style={{padding:"0px", margin:"0px",fontFamily: "Raleway",}}>Swap Face on <span style={gradientText}>Image</span></h2>
-                        <p style={{padding:"0px", margin:"0px",fontFamily: "Raleway",fontSize: "14px",}}>Using a high quality image, upload your base and hero image now.</p>
+                        <h2 style={{ padding: "0px", margin: "0px", fontFamily: "Raleway", }}>Swap Face on <span style={gradientText}>Image</span></h2>
+                        <p style={{ padding: "0px", margin: "0px", fontFamily: "Raleway", fontSize: "14px", }}>Using a high quality image, upload your base and hero image now.</p>
                         <p style={{
                             fontFamily: "Raleway",
                             fontSize: "20px",
@@ -53,12 +56,15 @@ const Section5 = () => {
                             letterSpacing: "0em",
                             textAlign: "center",
                             color: "#FFD600",
-                        }}>{`>>TRY NOW`}</p>
+                            cursor: "pointer"
+                        }}
+                            onClick={() => navigate("/videoswap")}
+                        >{`>>TRY NOW`}</p>
                     </div>
                     <div style={divStyles}>
                         <img src={gifSwao} height="125px" width="135px" alt="" />
-                        <h2 style={{padding:"0px", margin:"0px",fontFamily: "Raleway",}}>Swap Face on <span style={gradientText}>Video</span></h2>
-                        <p style={{padding:"0px", margin:"0px",fontFamily: "Raleway",fontSize: "14px",}}>Have a favorite GIF? Apply a face and go to town!</p>
+                        <h2 style={{ padding: "0px", margin: "0px", fontFamily: "Raleway", }}>Swap Face on <span style={gradientText}>Video</span></h2>
+                        <p style={{ padding: "0px", margin: "0px", fontFamily: "Raleway", fontSize: "14px", }}>Have a favorite Video? Apply a face and go to town! And enjoy</p>
                         <p style={{
                             fontFamily: "Raleway",
                             fontSize: "20px",
@@ -67,35 +73,32 @@ const Section5 = () => {
                             letterSpacing: "0em",
                             textAlign: "center",
                             color: "#FFD600",
-                        }}>{`>>TRY NOW`}</p>
+                            cursor: "pointer"
+                        }}
+                            onClick={() => navigate("/gifswap")}
+                        >{`>>TRY NOW`}</p>
                     </div>
                 </div>
-                <div style={{
-                    margin:"4% 8%",
-                    padding: "3% 6%",
-                    background:"#E9E9E9",
-                    borderRadius: "800px",
-                    textAlign: "left",
-                    display: "flex",
-                    justifyContent: "space-between",
-                    height: "157px"
-                }}>
+                <div
+                    className={styles.gifTryNow}
+                >
                     <h2>Try It <span style={gradientText}>NOW!!!</span></h2>
                     <div>
-                    <img src={arrow} alt="Arrow"/> 
-                    <button style={{
-                        background: "#FFD600",
-                        color: "white",
-                        padding: "10px 30px",
-                        borderRadius: "15px",
-                        border: "none",
-                        outline: "none",
-                        fontSize: "25px",
-                        margin: "0px 10px"
-                    }}>Swap It</button>
+                        <img src={arrow} alt="Arrow" className={styles.gifArrow} />
+
+                        <button style={{
+                            background: "#FFD600",
+                            color: "white",
+                            padding: "10px 30px",
+                            borderRadius: "15px",
+                            border: "none",
+                            outline: "none",
+                            fontSize: "25px",
+                            margin: "0px 10px"
+                        }}>Swap It</button>
                     </div>
                 </div>
-           <Footer color="black"/>
+                <Footer color="black" />
             </div>
         </>
     )

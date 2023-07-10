@@ -84,11 +84,11 @@
 .section6heading {
   margin: 0px;
   font-size: 40px;
-  font-weight: 600
+  font-weight: 600;
 }
 
 .section7main {
-  margin: 50px 70px 60px 70px;
+  margin: 50px 100px 60px 100px;
   padding: 3% 6%;
   background: #1F1F1F;
   border-radius: 800px;
@@ -109,6 +109,7 @@
   outline: none;
   font-size: 25px;
   margin: 0 10px;
+  cursor: pointer;
 }
 
 
@@ -120,6 +121,27 @@
   padding: 20px;
   font-family: Raleway;
   overflow-x: "hidden";
+}
+
+
+/* gif swap  */
+
+.gifSection5main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.gifTryNow{
+  margin:4% 8%;
+  padding: 3% 6%;
+  background:#E9E9E9;
+  border-radius: 800px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  height: 157px
 }
 
 @media screen and (max-width: 800px) {
@@ -219,7 +241,7 @@
   }
 
   .section7main {
-    margin: 30px 0;
+    margin: 30px 0px;
     padding: 9% 6%;
     background: #1F1F1F;
     text-align: left;
@@ -266,10 +288,29 @@
     justify-content: center;
     align-items: center;
   }
+
+  .gifSection5main{
+    align-items: center;
+    margin: 10px auto;
+  }
+
+  .gifTryNow{
+    margin:0;
+    padding: 3% 6%;
+    background:#E9E9E9;
+    border-radius: 0;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    height: 157px;
+    align-items: center;
+    width: 100vw
+  }
+
+  .gifArrow{
+    height: 35px;
+  }
 }
-
-
-
 
 @media screen and (max-width: 1000px) {
   .section6image {
@@ -292,6 +333,15 @@
   .section2image {
     height: 250px;
     width: 300px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .gifSection5main{
+    display: block;
   }
 
 }

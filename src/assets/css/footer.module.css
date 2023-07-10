@@ -6,12 +6,10 @@
     text-align: center;
     font-family: Raleway;
     padding: 0px 50px 49px 50px;
-    
   }
   
   .div1 {
-    text-align: left;
-    font-size: 12px;
+    font-size: 14px;
   }
   
   .div1Item {
@@ -27,14 +25,14 @@
   }
   
   .div3 {
-    text-align: left;
-    font-size: 12px;
+    /* text-align: left; */
+    font-size: 14px;
+    cursor: pointer;
   }
   
   .div3 > p {
     margin: 5px 0px;
-    padding: 0;
-    text-align: left;
+    padding: 5px;
   }
   
   /* Responsive Styles for Mobile Screens */

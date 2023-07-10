@@ -17,7 +17,7 @@ const Section2 = () => {
 
   return (
     <>
-     <div style={{
+     {/* <div style={{
                 background: "#EFEFEF",
                 padding: "10px 60px",
                 display: "flex" ,
@@ -79,7 +79,8 @@ const Section2 = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <Section2/>
     </>
   )
 

@@ -5,6 +5,7 @@ import Privacy from './Privacy';
 import arrow from "../../assets/images/tryArrow.png"
 import Footer from "../../components/Footer"
 import deepDuck from "../../assets/images/deepDuck.png"
+import Section7 from '../Landing/Section7';
 
 const Policy = () => {
   const [activeTab, setActiveTab] = useState('terms');
@@ -26,7 +27,8 @@ const Policy = () => {
     background: 'none',
     color: '#6E6E6E',
     fontFamily: 'Raleway',
-    margin: '10px 30px'
+    margin: '10px 30px',
+    cursor: "pointer"
   };
 
   const activeStyle = {
@@ -37,7 +39,8 @@ const Policy = () => {
     margin: '10px 40px',
     borderRadius: '20px',
     color: 'white',
-    padding: '12px 23px'
+    padding: '12px 23px',
+    cursor: "pointer"
   };
 
   const handleTabChange = (tab) => {
@@ -64,7 +67,7 @@ const Policy = () => {
       </button>
       <div
         style={{
-          margin: '50px',
+          margin: '66px',
           padding: '05%',
           borderRadius: '20px',
           background: '#1F1F1F',
@@ -73,7 +76,7 @@ const Policy = () => {
       >
         {activeTab === 'terms' ? <Terms /> : <Privacy />}
       </div>
-      <div style={{
+      {/* <div style={{
                     margin:"4% 8%",
                     padding: "3% 6%",
                     background:"#1F1F1F",
@@ -98,7 +101,8 @@ const Policy = () => {
                         margin: "0px 10px"
                     }}>Swap It</button>
                     </div>
-                </div>
+                </div> */}
+                <Section7/>
            <Footer color="white"/>
     </div>
   );
