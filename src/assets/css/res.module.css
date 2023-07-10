@@ -37,9 +37,9 @@
 }
 
 .section3image {
-  height: 350px;
-  width: 400px;
-  margin-top: 10vh;
+  height: 300px;
+  width: 350px;
+  /* margin-top: 10vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,10 +121,66 @@
 
 .imageSwapmain{
   display: flex;
-  margin: 05px 20px;
+  margin: 05px 60px;
   padding: 20px;
   font-family: Raleway;
   overflow-x: "hidden";
+}
+
+.imageSwapImage{
+  height: 350px ;
+  width: 450px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin: 10px auto
+}
+
+.mainImageSwapDiv{
+  background: #B4FFE3;
+  height: 100vh;
+}
+
+.section3 {
+  background: #ffffff;
+  font-family: Raleway;
+  text-align: center;
+  padding: 20px 16%;
+  color: black;
+  margin: 20px 20px 20px 20px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 47px;
+  letter-spacing: 0em;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+}
+
+.image {
+  height: 90%;
+  width: 80% ;
+}
+
+.action {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffd600;
+}
+
+.clickable {
+  cursor: pointer;
 }
 
 
@@ -134,7 +190,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px auto;
 }
 
 .gifTryNow{
@@ -185,7 +240,7 @@
   .section3image {
     height: 200px;
     width: 250px;
-    margin-top: 10vh;
+    margin: 0px auto;
   }
 
   .section3content {
@@ -279,7 +334,7 @@
   .imageSwapmain{
     display: block;
     margin: 05px 20px;
-    padding: 20px;
+    padding: 10px 10px 30px 10px;
     font-family: Raleway;
     overflow-x: hidden;
   }
@@ -287,21 +342,21 @@
   .imageSwapMainContent{
     display: block;
   text-align: center;
+  margin: 0px;
+  
   }
 
   .imageSwapImage{
     height: 200px ;
     width: 300px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    margin: 10px auto
+    
   }
 
-  .gifSection5main{
-    align-items: center;
-    margin: 10px auto;
-  }
-
+ 
   .gifTryNow{
     margin:0;
     padding: 3% 6%;
@@ -312,11 +367,16 @@
     justify-content: space-between;
     height: 157px;
     align-items: center;
-    width: 100vw
+    /* width: 100vw */
   }
 
   .gifArrow{
     height: 35px;
+  }
+
+  .mainImageSwapDiv{
+    background: #B4FFE3;
+    height: auto;
   }
 }
 
@@ -330,7 +390,7 @@
   .section3image {
     height: 250px;
     width: 300px;
-    margin-top: 10vh;
+    margin: 10px auto;
   }
 
   .section4image {
@@ -343,6 +403,13 @@
     width: 300px;
   }
 
+  .imageSwapImage{
+    height: 250px ;
+    width: 350px;
+    display: flex;
+    margin: 10px auto
+  }
+
 
 }
 
@@ -351,12 +418,85 @@
     height: 250px;
     width: 300px;
   } 
+  .section6image {
+    height: 200px;
+    display: flex;
+    margin: auto;
+  }
+
+  .imageSwapImage{
+    height: 250px ;
+    width: 350px;
+    display: flex;
+    margin: 10px auto
+  }
+
+  .imageSwapmain{
+    display: flex;
+    margin: 05px 20px;
+    padding: 20px;
+    font-family: Raleway;
+    overflow-x: hidden;
+  }
+
+  .image {
+    height: 90%;
+    width: 80% ;
+  }
 }
 
 
 @media screen and (max-width: 600px) {
-  .gifSection5main{
+  /* .gifSection5main{
     display: block;
-  }
+    margin: 0px auto;
+  } */
 
+  .gifSection5main {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+}
+
+
+
+@media screen and (max-width: 900px) {
+.imageSwapImage{
+  height: 200px ;
+  width: 300px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin: 10px auto
+}
+
+.imageSwapmain{
+  display: block;
+  margin: 05px 20px;
+  padding: 20px;
+  font-family: Raleway;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 47px;
+  letter-spacing: 0em;
+}
+
+.description {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  margin: 5px
+}
+
+.image {
+  height: 90%;
+  width: 90% ;
+}
 }

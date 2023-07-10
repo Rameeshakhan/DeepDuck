@@ -15,19 +15,18 @@ const ImageSwap = () => {
 
   const divStyles = {
     padding: "08px 30px",
-    margin: "10px",
+    margin: "20px",
     width: "100%",
     display: "flex",
     alignItems: "center",
+    // border: "1px solid black",
+    justifyContent: "center",
   }
   return (
     <>
-      <div style={{
-        background: "#B4FFE3",
-        height: "auto",
-        marginBottom: "1%",
-        overflowX: "hidden"
-      }}>
+      <div
+      className={styles.mainImageSwapDiv}
+      >
         <Navbar
           deepDuckImage={deepDuck}
           optionColor="black"
@@ -62,20 +61,44 @@ const ImageSwap = () => {
                 }}
                 onClick={()=> navigate("/imageupload")}
               >Try Swap It</button>
-              <img src={arrow} height="19px" width="70px" />
-              <br /><br /><br /><br /><br />
+              <img src={arrow} height="19px" width="70px"  className={styles.btnArrow}/>
+              <br /><br />
             </div>
           </div>
           <div style={divStyles}>
             <img src={image} className={styles.imageSwapImage} />
           </div>
         </div>
-      </div>
+      </div><br/>
       <Section2 />
       <Section3/>
       <Section4/>
+     {/* <Section2 />
+     <Section3/>
+     <Section4/> */}
     </>
   )
 }
 
 export default ImageSwap
+
+// import React from 'react'
+// import Navbar from '../../components/Navbar'
+// import deepDuck from "../../assets/images/blackDeepDuck.png"
+// import image from "../../assets/images/imageSwap-before.png"
+// import arrow from "../../assets/images/arrowBtn.png"
+// import Section2 from './Section2'
+// import Section3 from './Section3'
+// import Section4 from './Section4'
+// import { useNavigate } from 'react-router-dom'
+// import styles from "../../assets/css/res.module.css"
+
+// const ImageSwap = () => {
+//   return (
+//     <div>
+//       Image swap
+//     </div>
+//   )
+// }
+
+// export default ImageSwap
