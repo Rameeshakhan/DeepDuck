@@ -20,7 +20,7 @@ const IntroSection = () => {
         backgroundSize: 'contain',
         backgroundPosition: 'center',
         backgroundRepeat: "no-repeat",
-        height: "660px",
+        height: "720px",
       }}
     >
       <div className={styles['grid-container']}>

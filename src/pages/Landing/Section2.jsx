@@ -12,38 +12,31 @@ const Section2 = () => {
         margin: "10px",
         padding: "10px 20px 10px 20px",
         width: "100%",
-        display: "flex"
+        display: "flex",
+
     };
 
     return (
         <>
-            <div style={{
-                background: "White",
-                padding: "06%",
-                display: "flex" 
-            }}
+            <div
+            className={styles.section2main}
             >
                 <div style={divStyles}>
-                <div style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "center",
-                        color: "black",
-                        fontFamily: "Raleway",
-                    }}>
+                <div
+                    className={styles.section2Content}
+                    >
                         <div style={{
                             display: "flex",
-                            alignItems: "center",
-                            gap: "10px", 
+                            gap: "0px", 
                         }}>
                             <h1
-                                style={{
-                                    margin: "0px",
-                                    fontSize: "40px",
-                                    fontWeight: "600"
-                                }}
+                                // style={{
+                                //     margin: "0px",
+                                //     fontSize: "40px",
+                                //     fontWeight: "600"
+                                // }}
                             >Image Swap</h1>
-                            <img src={stick} height="70px" width="41px" />
+                            <img src={stick} height="70px" width="41px"/>
                         </div>
                         <p
                             style={{
@@ -77,7 +70,7 @@ const Section2 = () => {
                     </div>
                 </div>
                 <div style={divStyles}>
-                <img src={image1} alt="Image" />
+                <img src={image1} alt="Image" className={styles.section2image} />
                 </div>
             </div>
         </>

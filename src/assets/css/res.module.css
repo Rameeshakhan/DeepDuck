@@ -1,6 +1,50 @@
+/* landing page section 2 */
+
+.section2main{
+  background: White;
+    padding: 06%;
+   display: flex ;
+   text-align: left;
+}
+
+.section2image{
+  height:auto;
+   width:auto;
+   margin: auto;
+}
+
+.section2Content{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  color: black;
+  font-family: Raleway;
+}
+
+
+/* landing page section 3 */
+
+
 @media screen and (max-width: 800px) {
-    .media-query-container {
+    .section2main {
       display: block;
+      text-align: center;
+      margin: auto;
+    }
+
+    .section2Content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      font-family: Raleway;
+    }
+
+    .section2image{
+      height:200px;
+       width:300px;
     }
   }
   
