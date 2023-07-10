@@ -38,7 +38,7 @@ const Section4 = () => {
                         </div>
                         <p
                             style={{
-                                fontSize: "12px",
+                                fontSize: "16px",
                                 fontWeight: "500"
                             }}
                         >Have a favorite GIF? Put your face on it and text it to your friends.</p>

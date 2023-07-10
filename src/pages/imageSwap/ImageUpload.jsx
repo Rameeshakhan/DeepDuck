@@ -66,7 +66,7 @@ const ImageUpload = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowModal(true);
-    }, 20000);
+    }, 10000);
 
     return () => {
       clearTimeout(timer);

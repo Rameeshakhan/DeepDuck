@@ -34,7 +34,7 @@ const Section2 = () => {
                         </div>
                         <p
                             style={{
-                                fontSize: "20px",
+                                fontSize: "14px",
                                 fontWeight: "500"
                             }}
                         >With Deep Duck, swapping faces on any image is as simple as an upload and a click. Use our swap tool below to get started. </p>
