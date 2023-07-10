@@ -1,59 +1,80 @@
 import React from 'react';
 import image1 from "../../assets/images/videoSwap-got.png";
-import stroke from "../../assets/images/stick.png";
-import arrow from "../../assets/images/arrowBtn.png"
+import stick from "../../assets/images/stick.png";
+import arrow from "../../assets/images/arrowBtn.png";
+import { useNavigate } from 'react-router-dom';
+import styles from "../../assets/css/res.module.css"
+
 const Section2 = () => {
-    const divStyle = {
+    const navigate = useNavigate()
+
+    const divStyles = {
+        margin: "10px",
+        padding: "10px 20px 10px 20px",
         width: "100%",
-        height: "59px",
-        margin: "30px",
-        padding: "10px"
+        display: "flex",
+        flex: 1,
+        alignItems: "center"
     };
 
     return (
         <>
-            <div>
-                <div
-                    style={{
-                        display: "flex",
-                        height: "350px",
-                        margin: "10% 8%",
-                        color: "white"
-                    }}
-                >
-                    <div style={divStyle}>
-                        <div
-                            style={{
-                                display: "flex",
-                                alignItems: "center",
-                                marginTop: "7%",
-                                fontFamily: "Raleway"
-                            }}
-                        >
-                            <h2 style={{ marginRight: "10px" }}>Video face Swap</h2>
-                            <img src={stroke} alt="stroke" />
-                        </div>
-                        <p>
-                            Using high quality video, upload your base footage, and with our face
-                            swap tool, upload a high quality image of the face you’d like to
-                            swap. That’s it!
-                        </p>
-                        <button style={{
-                            border: "none",
-                            outline: "none",
-                            borderRadius: "12px",
-                            background: "#FFD600",
-                            color: "white",
-                            padding: "10px 30px",
-                            fontSize: "17px",
-                            marginRight: "10px "
+            <div
+        style={{
+            background: "inherit",
+            marginTop: "15px"
+        }}
 
-                        }}>Try Image Swap</button>
-                        <img src={arrow} alt="arrow" />
+            className={styles.section2main}
+            >
+                <div style={divStyles}>
+                <div
+                    className={styles.section2Content}
+                    >
+                        <div style={{
+                            display: "flex",
+                            gap: "0px", 
+                            
+            color: "white"
+                        }}>
+                            <h1 > Video Face Swap</h1>
+                            <img src={stick} height="70px" width="41px"/>
+                        </div>
+                        <p
+                            style={{
+                                fontSize: "14px",
+                                fontWeight: "500",
+                                
+            color: "white"
+                            }}
+                        >Using high quality video, upload your base footage, and with our face swap tool, upload a high quality image of the face you’d like to swap. That’s it!</p>
+                        <div style={{
+                            display: "flex",
+                            alignItems: "center", 
+                            gap: "10px", 
+                            margin: "20px 0px", 
+                        }}>
+                            <button
+                                style={{
+                                    width: "182px",
+                                    background: "#FFD600",
+                                    padding: "15px 25px",
+                                    border: "none",
+                                    outline: "none",
+                                    borderRadius: "12px",
+                                    color: "white",
+                                    fontSize: "17px",
+                                    fontWeight: "700"
+                                }}
+
+                                onClick={()=> navigate("/imageswap")}
+                            >Try Video Swap</button>
+                            <img src={arrow} height="17px" width="60px" className={styles.btnArrow} />
+                        </div>
                     </div>
-                    <div style={divStyle}>
-                        <img src={image1} height="328px" width="520px" alt="videoSwap" />
-                    </div>
+                </div>
+                <div style={divStyles}>
+                <img src={image1} alt="Image" className={styles.section2image} />
                 </div>
             </div>
         </>

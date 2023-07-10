@@ -57,7 +57,8 @@ const ImageSwap = () => {
                   color: "white",
                   fontSize: "17px",
                   fontWeight: "700",
-                  marginRight: "10px"
+                  marginRight: "10px",
+                  cursor: "pointer"
                 }}
                 onClick={()=> navigate("/imageupload")}
               >Try Swap It</button>
