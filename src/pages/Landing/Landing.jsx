@@ -3,7 +3,7 @@ import styles from "../../assets/css/landing.module.css"
 import IntroSection from './IntroSection'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
-import deepDuck from "../../assets/images/DeepDuck.png"
+import deepDuck from "../../assets/images/deepDuck.png"
 import Section2 from "./Section2"
 import Section3 from './Section3'
 import Section4 from './Section4'
