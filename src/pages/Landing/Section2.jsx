@@ -13,6 +13,8 @@ const Section2 = () => {
         padding: "10px 20px 10px 20px",
         width: "100%",
         display: "flex",
+        flex: 1,
+        alignItems: "center"
     };
 
     return (
@@ -41,7 +43,7 @@ const Section2 = () => {
                             display: "flex",
                             alignItems: "center", 
                             gap: "10px", 
-                            margin: "40px 0px", 
+                            margin: "20px 0px", 
                         }}>
                             <button
                                 style={{

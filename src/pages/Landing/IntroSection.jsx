@@ -17,10 +17,6 @@ const IntroSection = () => {
       className={styles['intro-section-container']}
       style={{
         backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: "no-repeat",
-        height: "100vh",
       }}
     >
       <div className={styles['grid-container']}>

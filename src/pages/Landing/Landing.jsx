@@ -19,12 +19,18 @@ const Landing = () => {
         optionColor="#888888"
       />
       <IntroSection />
+      <div
+     style={{
+      // padding: "40px"
+     }} 
+      >
       <Section2 />
       <Section3 />
       <Section4 />
       <Section5 />
       <Section6/>
       <Section7/>
+      </div>
       <Footer color="white" />
     </div>
   )
