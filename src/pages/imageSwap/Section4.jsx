@@ -20,7 +20,7 @@ const Section4 = () => {
     const divStyles = {
         margin: "30px",
         padding: "20px 40px",
-        width: "420px",
+        // width: "420px",
         // flex: 1,
         gap:"0px"
     }
