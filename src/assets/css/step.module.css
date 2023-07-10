@@ -1,0 +1,45 @@
+.block-divs {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+  }
+  
+  .divStyle {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    margin: 80px 20px;
+  }
+  
+  .rotate-image {
+    flex: 0.6;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: auto;
+  }
+  
+  @media (max-width: 800px) {
+    .block-divs {
+      display: block;
+    }
+  
+    .rotate-image {
+      width: auto;
+      height: auto;
+      display: block;
+      transform: rotate(90deg);
+      flex: 1;
+    }
+  
+    .divStyle {
+      flex: 1;
+            text-align: center;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

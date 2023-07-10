@@ -96,7 +96,7 @@ const Section4 = () => {
                             gap: "0px", 
                             color: "white"
                         }}>
-                            <h1>Video Face Swap</h1>
+                            <h1>Video Swap</h1>
                             <img src={stick} height="70px" width="41px"/>
                         </div>
                         <p
