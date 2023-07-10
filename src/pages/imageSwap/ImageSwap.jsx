@@ -7,6 +7,7 @@ import Section2 from './Section2'
 import Section3 from './Section3'
 import Section4 from './Section4'
 import { useNavigate } from 'react-router-dom'
+import styles from "../../assets/css/res.module.css"
 
 const ImageSwap = () => {
 
@@ -23,23 +24,20 @@ const ImageSwap = () => {
     <>
       <div style={{
         background: "#B4FFE3",
-        height: "633px",
-        marginBottom: "1%"
+        height: "auto",
+        marginBottom: "1%",
+        overflowX: "hidden"
       }}>
         <Navbar
           deepDuckImage={deepDuck}
           optionColor="black"
         />
 
-        <div style={{
-          display: "flex",
-          margin: "05px 20px",
-          padding: "20px",
-          fontFamily: "Raleway"
-        }}>
+        <div 
+        className={styles.imageSwapmain}
+        >
           <div style={divStyles}>
-            <div style={{
-            }}>
+            <div className={styles.imageSwapMainContent}>
               <h2 style={{
                 fontWeight: "600",
                 fontSize: "40px",
@@ -69,7 +67,7 @@ const ImageSwap = () => {
             </div>
           </div>
           <div style={divStyles}>
-            <img src={image} />
+            <img src={image} className={styles.imageSwapImage} />
           </div>
         </div>
       </div>

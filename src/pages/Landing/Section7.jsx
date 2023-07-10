@@ -1,6 +1,6 @@
 import React from 'react'
 import arrow from "../../assets/images/tryArrow.png"
-
+import styles from "../../assets/css/res.module.css"
 const Section7 = () => {
 
     const gradientText = {
@@ -15,30 +15,15 @@ const Section7 = () => {
 
   return (
     <div>
-         <div style={{
-                    margin:"50px 70px 60px 70px",
-                    padding: "3% 6%",
-                    background:"#1F1F1F",
-                    borderRadius: "800px",
-                    textAlign: "left",
-                    display: "flex",
-                    justifyContent: "space-between",
-                    height: "157px",
-                    fontFamily:"Raleway"
-                }}>
+         <div
+                className={styles.section7main}
+                >
                     <h2>Try It <span style={gradientText}>NOW!!!</span></h2>
                     <div>
-                    <img src={arrow} alt="Arrow"/> 
-                    <button style={{
-                        background: "#FFD600",
-                        color: "white",
-                        padding: "10px 30px",
-                        borderRadius: "15px",
-                        border: "none",
-                        outline: "none",
-                        fontSize: "25px",
-                        margin: "0px 10px"
-                    }}>Swap It</button>
+                    <img src={arrow} alt="Arrow" className={styles.section7image} /> 
+                    <button 
+                    className={styles.section7button}
+                    >Swap It</button>
                     </div>
                 </div>
     </div>

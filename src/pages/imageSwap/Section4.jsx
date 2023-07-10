@@ -11,7 +11,7 @@ const Section4 = () => {
         padding: "20px 0px",
         width: "350px"
     }
-
+    
     const gradientText = {
         background: "linear-gradient(0deg, #0E33BE, #14C483, #FFD600, #FF5757)",
         "-webkit-background-clip": "text",

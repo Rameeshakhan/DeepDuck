@@ -3,7 +3,7 @@ import image1 from "../../assets/images/gif-swap.png";
 import stick from "../../assets/images/stick.png";
 import arrow from "../../assets/images/arrowBtn.png";
 import { useNavigate } from 'react-router-dom';
-
+import styles from "../../assets/css/res.module.css"
 
 const Section4 = () => {
 
@@ -12,28 +12,20 @@ const Section4 = () => {
         margin: "10px",
         padding: "0px 20px 0px 20px",
         width: "100%",
-        display: "flex"
+        display: "flex",
     };
 
     return (
         <>
-            <div style={{
-                background: "White",
-                padding: "02% 06%",
-                display: "flex" 
-            }}>
-                <div style={divStyles}>
-                <div style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "center",
-                        color: "black",
-                        fontFamily: "Raleway",
-                    }}>
+            <div 
+            className={styles.section4main}
+            >
+                <div 
+                    className={styles.section4content}
+                    >
                         <div style={{
                             display: "flex",
-                            alignItems: "center",
-                            gap: "10px", 
+                            gap: "0px", 
                         }}>
                             <h1
                                 style={{
@@ -73,9 +65,13 @@ const Section4 = () => {
                             <img src={arrow} height="17px" width="60px" />
                         </div>
                     </div>
-                </div>
-                <div style={divStyles}>
-                <img src={image1} alt="Image" />
+                <div
+                style={{
+                    display: "flex",
+                    justifyContent : "center"
+                }}
+                >
+                <img src={image1} alt="Image" className={styles.section4image}/>
                 </div>
             </div>
         </>

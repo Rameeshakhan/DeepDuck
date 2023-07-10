@@ -1,7 +1,7 @@
 import React from 'react';
 import image1 from "../../assets/images/data.png";
 import stick from "../../assets/images/lock.png";
-
+import styles from "../../assets/css/res.module.css"
 
 const Section6 = () => {
 
@@ -14,30 +14,20 @@ const Section6 = () => {
 
     return (
         <>
-            <div style={{
-                background: "White",
-                padding: "06%",
-                display: "flex" 
-            }}>
+            <div 
+            className={styles.section6main}
+            >
                 <div style={divStyles}>
-                <div style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "center",
-                        color: "black",
-                        fontFamily: "Raleway",
-                    }}>
+                <div
+                    className={styles.section6content}>
                         <div style={{
                             display: "flex",
                             alignItems: "center",
                             gap: "10px", 
                         }}>
                             <h1
-                                style={{
-                                    margin: "0px",
-                                    fontSize: "40px",
-                                    fontWeight: "600"
-                                }}
+                    
+                                className={styles.section6heading}
                             >Your Data is Safe.</h1>
                             <img src={stick} height="70px" width="90px" />
                         </div>
@@ -51,7 +41,7 @@ const Section6 = () => {
                     </div>
                 </div>
                 <div style={divStyles}>
-                <img src={image1} alt="Image" />
+                <img src={image1} alt="Image" className={styles.section6image}/>
                 </div>
             </div>
         </>

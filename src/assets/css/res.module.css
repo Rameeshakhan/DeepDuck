@@ -1,19 +1,19 @@
 /* landing page section 2 */
 
-.section2main{
+.section2main {
   background: White;
-    padding: 06%;
-   display: flex ;
-   text-align: left;
+  padding: 06%;
+  display: flex;
+  text-align: left;
 }
 
-.section2image{
-  height:auto;
-   width:auto;
-   margin: auto;
+.section2image {
+  height: auto;
+  width: auto;
+  margin: auto;
 }
 
-.section2Content{
+.section2Content {
   display: flex;
   flex-direction: column;
   /* justify-content: center;
@@ -25,26 +25,272 @@
 
 /* landing page section 3 */
 
+.section3main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 20px 8% 10% 8%;
+  color: white
+}
+
+.section3image {
+  height: 350px;
+  width: 400px;
+  margin-top: 10vh;
+}
+
+.section3content {
+  display: flex;
+  margin-top: 7%;
+  font-family: Raleway;
+  align-items: center;
+  height: auto;
+}
+
+
+/* landing page section 4 */
+.section4main {
+  background: White;
+  padding: 02% 06%;
+  display: flex;
+}
+
+.section4content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  font-family: Raleway;
+  flex: 1;
+  padding: 20px;
+}
+
+.section6main {
+  background: White;
+  padding: 06%;
+  display: flex;
+}
+
+.section6content {
+  display: flex;
+  flex-direction: column;
+  justify-Content: center;
+  color: black;
+  font-family: Raleway;
+}
+
+.section6heading {
+  margin: 0px;
+  font-size: 40px;
+  font-weight: 600
+}
+
+.section7main {
+  margin: 50px 70px 60px 70px;
+  padding: 3% 6%;
+  background: #1F1F1F;
+  border-radius: 800px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  height: 157px;
+  font-Family: Raleway
+}
+
+
+.section7button{
+  background: #FFD600;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+
+/* image swap page */
+
+.imageSwapmain{
+  display: flex;
+  margin: 05px 20px;
+  padding: 20px;
+  font-family: Raleway;
+  overflow-x: "hidden";
+}
 
 @media screen and (max-width: 800px) {
-    .section2main {
-      display: block;
-      text-align: center;
-      margin: auto;
-    }
-
-    .section2Content{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: black;
-      font-family: Raleway;
-    }
-
-    .section2image{
-      height:200px;
-       width:300px;
-    }
+  .section2main {
+    display: block;
+    text-align: center;
+    margin: auto;
   }
-  
+
+  .section2Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: Raleway;
+  }
+
+  .section2image {
+    height: 250px;
+    width: 300px;
+  }
+
+  .section3main {
+    display: block;
+    height: auto;
+    align-items: center;
+    margin: 20px 8% 10% 8%;
+    color: white;
+    text-align: center;
+  }
+
+  .section3image {
+    height: 200px;
+    width: 250px;
+    margin-top: 10vh;
+  }
+
+  .section3content {
+    display: flex;
+    margin-top: 7%;
+    font-family: Raleway;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+  }
+
+  .section4main {
+    background: White;
+    padding: 02% 06%;
+    display: block;
+  }
+
+  .section4image {
+    height: 300px;
+    width: 300px;
+  }
+
+  .section4content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    font-family: Raleway;
+    flex: 1;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .section6main {
+    background: White;
+    padding: 06%;
+    display: block;
+  }
+
+  .section6content {
+    display: flex;
+    flex-direction: column;
+    justify-Content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-family: Raleway;
+    padding: 20px
+  }
+
+  .section6heading {
+    margin: 0px;
+    font-size: 25px;
+    font-weight: 900
+  }
+
+  .section6image {
+    height: 200px;
+    display: flex;
+    margin: auto;
+  }
+
+  .section7main {
+    margin: 30px 0;
+    padding: 9% 6%;
+    background: #1F1F1F;
+    text-align: left;
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 157px;
+    font-Family: Raleway;
+    align-items: center;
+  }
+
+  .section7image{
+    height: 30px;
+  }
+
+  .section7button{
+    background: #FFD600;
+    color: white;
+    padding: 07px 25px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin: 0 10px;
+  }
+
+  .imageSwapmain{
+    display: block;
+    margin: 05px 20px;
+    padding: 20px;
+    font-family: Raleway;
+    overflow-x: hidden;
+  }
+
+  .imageSwapMainContent{
+    display: block;
+  text-align: center;
+  }
+
+  .imageSwapImage{
+    height: 200px ;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .section6image {
+    height: 200px;
+    display: flex;
+    margin: auto;
+  }
+
+  .section3image {
+    height: 250px;
+    width: 300px;
+    margin-top: 10vh;
+  }
+
+  .section4image {
+    height: 320px;
+    width: 320px;
+  }
+
+  .section2image {
+    height: 250px;
+    width: 300px;
+  }
+
+}

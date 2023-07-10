@@ -3,42 +3,29 @@ import image1 from "../../assets/images/video-swap.png";
 import stroke from "../../assets/images/stick.png";
 import arrow from "../../assets/images/arrowBtn.png";
 import { useNavigate } from 'react-router-dom';
-
+import styles from "../../assets/css/res.module.css"
 const Section3 = () => {
 
     const navigate = useNavigate()
 
     const divStyle = {
-        width: "100%",
-        height: "59px",
-        margin: "30px",
-        padding: "10px",
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
     };
 
     return (
         <>
               <div>
-                <div
-                    style={{
-                        display: "flex",
-                        height: "350px",
-                        margin: "20px 8% 10% 8%",
-                        color: "white"
-                    }}
-                >
-                     <div style={divStyle}>
-                        <img src={image1} height="400px" width="450px" alt="videoSwap" />
+                <div className={styles.section3main} >
+                    <div style={divStyle}>
+                    <img src={image1} className={styles.section3image}alt="videoSwap" />
                     </div>
                     <div style={divStyle}>
-                        <div
-                            style={{
-                                display: "flex",
-                                alignItems: "center",
-                                marginTop: "7%",
-                                fontFamily: "Raleway"
-                            }}
+                    <div
+                        className={styles.section3content}
                         >
-                            <h2 style={{ marginRight: "10px" }}>Video Face Swap</h2>
+                            <h2 >Video Face Swap</h2>
                             <img src={stroke} alt="stroke" />
                         </div>
                         <p>
@@ -57,7 +44,9 @@ const Section3 = () => {
                         onClick={()=> navigate("/videoswap")}
                         >Try Video Swap</button>
                         <img src={arrow} alt="arrow" />
+
                     </div>
+
                    
                 </div>
             </div>

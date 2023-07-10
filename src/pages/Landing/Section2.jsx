@@ -29,13 +29,7 @@ const Section2 = () => {
                             display: "flex",
                             gap: "0px", 
                         }}>
-                            <h1
-                                // style={{
-                                //     margin: "0px",
-                                //     fontSize: "40px",
-                                //     fontWeight: "600"
-                                // }}
-                            >Image Swap</h1>
+                            <h1>Image Swap</h1>
                             <img src={stick} height="70px" width="41px"/>
                         </div>
                         <p

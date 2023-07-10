@@ -26,7 +26,7 @@ const IntroSection = () => {
       <div className={styles['grid-container']}>
         <div className={styles['grid-item']}>
           <div className={styles.leftside}>
-            <h2>Swap It!</h2>
+            <h2 style={{fontSize: "40px", margin: "0px"}}>Swap It!</h2>
             <p>Face swapping on an Image, Video or GIF is as easy as 1-2-3! Start your AI journey today!</p>
             <div className={styles.btnArrow}>
               <button className={styles.swapBtn}>Try Swap It</button>
