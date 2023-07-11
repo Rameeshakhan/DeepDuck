@@ -54,6 +54,9 @@ const Navbar = ( {deepDuckImage, optionColor}) => {
         <picture>
           <img src={logo} alt="Logo" height="39px" width="47px"
           onClick={()=> navigate("/")}
+          style={{
+            cursor: "pointer"
+          }}
           />
         </picture>
         <span style={{ marginLeft: '10px' }}>

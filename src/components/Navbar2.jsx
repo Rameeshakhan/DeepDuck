@@ -65,6 +65,9 @@ const Navbar = ({ deepDuckImage, optionColor }) => {
             height="39px"
             width="47px"
             onClick={() => navigate("/")}
+            style={{
+              cursor: "pointer"
+            }}
           />
         </picture>
         <span style={{ marginLeft: '10px' }}>
