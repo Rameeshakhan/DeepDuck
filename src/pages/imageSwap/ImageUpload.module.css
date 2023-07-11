@@ -322,3 +322,30 @@
         padding: 10px
     }
 }
+
+@media (max-width: 530px) {
+
+    .leftSide {
+        flex-basis: 50%;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 16px;
+        padding: 0px;
+        height: 300px;
+        margin:20px 0px
+    }
+
+    .rightSide {
+        flex-basis: 50%;
+        border: 3px dotted #FFD600;
+        padding: 16px;
+        background: #F2F2F2;
+        margin: 175px 8px;
+        height: 300px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
