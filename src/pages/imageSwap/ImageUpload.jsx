@@ -8,8 +8,11 @@ import gif from '../../assets/images/gif.png';
 import Modal from '../../components/Modal'
 import ConfirmEmail from '../payment/ConfrimEmail';
 import PayAsYouGo from '../payment/PayAsYouGo';
+import { useNavigate } from 'react-router-dom';
 
 const ImageUpload = () => {
+
+  const navigate = useNavigate()
   const [baseImage, setBaseImage] = useState(null);
   const [inputImage, setInputImage] = useState(null);
   const [baseImageUploaded, setBaseImageUploaded] = useState(false);
@@ -93,8 +96,8 @@ const ImageUpload = () => {
         <div className={styles.side}>
           <h2 className={styles.heading}>Image Swap</h2>
           <h6 className={styles.tyrthhese}>Try These</h6>
-          <img src={video} className={styles.sideelement}  alt="Video" />
-          <img src={gif} className={styles.sideelement}  alt="GIF" />
+          <img src={video} className={styles.sideelement}  alt="Video" onClick={() => navigate("/videoswap")}/>
+          <img src={gif} className={styles.sideelement}  alt="GIF"  onClick={() => navigate("/gifswap")}/>
         </div>
         <div className={styles.container}>
           <div className={styles.leftSide}>
