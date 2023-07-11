@@ -8,7 +8,12 @@ const Section3 = () => {
 
   return (
     <div>
-      <div className={styles.section3}>
+      <div 
+      className={styles.section3}
+      style={{
+        background: "white"
+      }}
+      >
         <h1 className={styles.title}>
           Master the Art of the Swap with Deep Duck!
         </h1>

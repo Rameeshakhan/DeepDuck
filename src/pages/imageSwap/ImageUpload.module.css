@@ -20,6 +20,8 @@
 
 .sideelement {
     margin: 5px;
+    height: 47px;
+    width: 47px;
 }
 
 .tyrthhese {
@@ -47,14 +49,12 @@
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     gap: 16px;
-    /* border: 1px solid black; */
     padding: 0px;
-    margin: 8px;
+    margin: 6px;
     height: 423px;
 }
 
 .block {
-    /* height: 100%; */
     margin-bottom: 4px;
     background: #F2F2F2;
     border-radius: 25px;
@@ -74,7 +74,6 @@
     margin: 05px;
     padding: 10px;
     font-family: Raleway;
-    
 }
 
 .b {
@@ -90,12 +89,12 @@
     border-radius: 5px;
 }
 
-.requirment{
+.requirment {
     font-size: 10px;
     font-weight: 500;
 }
 
-.mb{
+.mb {
     font-size: 10px;
 }
 
@@ -147,9 +146,8 @@
 }
 
 .plus-icon2 i {
-    color:white
+    color: white
 }
-
 
 .file-label2 {
     display: inline-block;
@@ -177,7 +175,7 @@
     align-items: center;
 }
 
-.btn{
+.btn {
     font-family: Raleway;
     font-size: 24px;
     padding: 10px 30px;
@@ -187,10 +185,10 @@
     outline: none;
     color: white;
     font-size: 24px;
-    font-weight:600 ;
+    font-weight: 600;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .container {
         display: block;
     }
@@ -200,7 +198,26 @@
     }
 
     .rightSide {
-        margin-top: 16px;
+        flex-basis: 50%;
+        border: 3px dotted #FFD600;
+        padding: 16px;
+        background: #F2F2F2;
+        margin: 80px 8px;
+        height: 300px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftSide {
+        flex-basis: 40%;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 16px;
+        padding: 0px;
+        margin: 6px;
+        height: 423px;
     }
 }
 
@@ -208,12 +225,100 @@
     width: 130px;
     height: 179px;
     object-fit: contain;
-  }
+}
 
-  /* .progressWrapper{
-    background:;
-  } */
-
-  .progress{
+.progress {
     background-color: #FFD600;
-  }
+}
+
+
+@media (max-width: 800px) {
+    .heading {
+        font-family: Raleway;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: center;
+        flex: 0.8;
+    }
+
+    .sideelement {
+        margin: 3px;
+        height: 35px;
+        width: 35px;
+    }
+
+    .insideblock {
+        margin: 2px 6%;
+        padding: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .insideblock2 {
+        margin: 05px;
+        padding: 04px;
+        font-family: Raleway;
+        font-size: 14px;
+    }
+
+    .file-label {
+        display: inline-block;
+        position: relative;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: white;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .file-label2 {
+        display: inline-block;
+        position: relative;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: white;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        background: linear-gradient(0deg, #0E33BE, #14C483, #FFD600, #FF5757);
+    }
+
+    .leftSide {
+        flex-basis: 50%;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 16px;
+        padding: 0px;
+        /* margin: 6px; */
+        height: 423px;
+    }
+
+    .rightSide {
+        flex-basis: 50%;
+        border: 3px dotted #FFD600;
+        padding: 16px;
+        background: #F2F2F2;
+        margin: 70px 8px;
+        height: 300px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block {
+        margin-bottom: 4px;
+        background: #F2F2F2;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+        padding: 10px
+    }
+}

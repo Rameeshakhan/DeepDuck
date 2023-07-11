@@ -2,64 +2,64 @@ import React from 'react';
 import image1 from "../../assets/images/gifSwap-section2.png";
 import stick from "../../assets/images/stick.png";
 import arrow from "../../assets/images/arrowBtn.png";
+import { useNavigate } from 'react-router-dom';
+import styles from "../../assets/css/res.module.css"
 
 const Section2 = () => {
+    const navigate = useNavigate()
 
     const divStyles = {
         margin: "10px",
-        padding: "20px 20px 10px 20px",
+        padding: "10px 20px 10px 20px",
         width: "100%",
-        display: "flex"
+        display: "flex",
+        flex: 1,
+        alignItems: "center"
     };
 
     return (
         <>
-            <div style={{
-                background: "#1A1A1A",
-                padding: "06%",
-                display: "flex" // Display the child divs side by side
-            }}>
-                <div style={divStyles}>
-                    <img src={image1} alt="Image" />
+        <div >
+
+       
+            <div
+            className={styles.section2main}
+            style={{
+                background: "#1A1A1A"
+            }}
+            >
+                  <div style={divStyles}>
+                <img src={image1} alt="Image" className={styles.section2image} />
                 </div>
+
                 <div style={divStyles}>
-                    <div style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "center",
-                        // alignItems: "center",
-                        color: "white",
-                        fontFamily: "Raleway",
-                    }}>
+                <div
+                    className={styles.section2Content}
+                    >
                         <div style={{
                             display: "flex",
-                            alignItems: "center", // Align items vertically in the center
-                            gap: "10px", // Add some gap between the heading and image
+                            gap: "0px", 
+                            color: "white"
                         }}>
-                            <h1
-                                style={{
-                                    margin: "0px",
-                                    fontSize: "40px",
-                                    fontWeight: "600"
-                                }}
-                            >Swap Face From GIF</h1>
-                            <img src={stick} height="70px" width="41px" />
+                            <h1>Swap Face From GIF</h1>
+                            <img src={stick} height="70px" width="41px"/>
                         </div>
                         <p
                             style={{
-                                fontSize: "12px",
-                                fontWeight: "500"
+                                fontSize: "14px",
+                                fontWeight: "500",
+                                color: "white"
                             }}
-                        >By using a high quality image, upload your gif, swap the face and enjoy!</p>
+                        >By using a high quality image, upload your gif, swap the face and enjoy!By using a high quality image, upload your gif, swap the face and enjoy!By using a high quality image, upload your gif, swap the face and enjoy! </p>
                         <div style={{
                             display: "flex",
                             alignItems: "center", 
                             gap: "10px", 
-                            margin: "40px 0px", 
+                            margin: "20px 0px", 
                         }}>
                             <button
                                 style={{
-                                    width: "162px",
+                                    width: "182px",
                                     background: "#FFD600",
                                     padding: "15px 25px",
                                     border: "none",
@@ -69,14 +69,19 @@ const Section2 = () => {
                                     fontSize: "17px",
                                     fontWeight: "700"
                                 }}
-                            >Try Swap It</button>
-                            <img src={arrow} height="17px" width="60px" />
+
+                                onClick={()=> navigate("/imageswap")}
+                            >Try Image Swap</button>
+                            <img src={arrow} height="17px" width="60px" className={styles.btnArrow} />
                         </div>
                     </div>
                 </div>
+              
+            </div>
             </div>
         </>
     );
 };
 
 export default Section2;
+

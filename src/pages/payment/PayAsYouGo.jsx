@@ -146,19 +146,6 @@ const PayAsYouGo = ({onClose}) => {
               </Button>
             </TableCell>
           </TableRow>
-          <TableRow>
-            <TableCell style={cellStyle}>
-              <Radio  sx={{color: "#FFD600"}}/>
-            </TableCell>
-            <TableCell style={cellStyle}>30 Credits</TableCell>
-            <TableCell style={cellStyle}>$ 20</TableCell>
-            <TableCell style={cellStyle}>1$ /Credit</TableCell>
-            <TableCell style={cellStyle}>
-              <Button variant="contained" sx={tableBtn}>
-              Buy Now
-              </Button>
-            </TableCell>
-          </TableRow>
         </TableBody>
       </Table>
     </TableContainer>

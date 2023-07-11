@@ -6,14 +6,17 @@ import Footer from '../../components/Footer'
 import styles from "../../assets/css/res.module.css"
 import { useNavigate } from 'react-router-dom'
 
-const Section5 = () => {
 
-    const navigate = useNavigate()
+const Section4 = () => {
+
+    const navigate=useNavigate()
 
     const divStyles = {
-        margin: "20px",
-        padding: "20px 0px",
-        width: "350px"
+        margin: "30px",
+        padding: "20px 40px",
+        // width: "420px",
+        // flex: 1,
+        gap:"0px"
     }
 
     const gradientText = {
@@ -32,6 +35,7 @@ const Section5 = () => {
                 background: "white",
                 color: "black",
                 // padding: "50px",
+                paddingTop: "50px",
                 textAlign: "center",
             }}>
                 <h1 style={{
@@ -41,13 +45,13 @@ const Section5 = () => {
                     lineHeight: "34px",
                     letterSpacing: "0em",
                 }}>Other Exciting Deep Duck Features</h1>
-                <div
-                    className={styles.gifSection5main}
+                <div 
+                className={styles.gifSection5main}
                 >
                     <div style={divStyles}>
-                        <img src={imageSwap} alt="" />
-                        <h2 style={{ padding: "0px", margin: "0px", fontFamily: "Raleway", }}>Swap Face on <span style={gradientText}>Image</span></h2>
-                        <p style={{ padding: "0px", margin: "0px", fontFamily: "Raleway", fontSize: "14px", }}>Using a high quality image, upload your base and hero image now.</p>
+                        <img src={imageSwap} alt="" height="100" width="110" />
+                        <h2 style={{padding:"0px", margin:"0px",fontFamily: "Raleway",}}>Swap Face on <span style={gradientText}>Image</span></h2>
+                        <p style={{padding:"0px", margin:"0px",fontFamily: "Raleway",fontSize: "14px",}}>Using a high quality image, upload your base and hero image now.</p>
                         <p style={{
                             fontFamily: "Raleway",
                             fontSize: "20px",
@@ -58,13 +62,13 @@ const Section5 = () => {
                             color: "#FFD600",
                             cursor: "pointer"
                         }}
-                            onClick={() => navigate("/videoswap")}
+                        onClick={()=> navigate("/imageswap")}
                         >{`>>TRY NOW`}</p>
                     </div>
                     <div style={divStyles}>
-                        <img src={gifSwao} height="125px" width="135px" alt="" />
-                        <h2 style={{ padding: "0px", margin: "0px", fontFamily: "Raleway", }}>Swap Face on <span style={gradientText}>Video</span></h2>
-                        <p style={{ padding: "0px", margin: "0px", fontFamily: "Raleway", fontSize: "14px", }}>Have a favorite Video? Apply a face and go to town! And enjoy</p>
+                        <img src={gifSwao} height="100" width="110" alt="" />
+                        <h2 style={{padding:"0px", margin:"0px",fontFamily: "Raleway",}}>Swap Face on <span style={gradientText}>Video</span></h2>
+                        <p style={{padding:"0px", margin:"0px",fontFamily: "Raleway",fontSize: "14px",}}>Have a favorite Video ? Apply a face and go to converting!</p>
                         <p style={{
                             fontFamily: "Raleway",
                             fontSize: "20px",
@@ -75,7 +79,7 @@ const Section5 = () => {
                             color: "#FFD600",
                             cursor: "pointer"
                         }}
-                            onClick={() => navigate("/gifswap")}
+                        onClick={()=> navigate("/videoswap")}
                         >{`>>TRY NOW`}</p>
                     </div>
                 </div>
@@ -94,14 +98,22 @@ const Section5 = () => {
                             border: "none",
                             outline: "none",
                             fontSize: "25px",
-                            margin: "0px 10px"
-                        }}>Swap It</button>
+                            margin: "0px 10px",
+                            cursor: "pointer"
+                        }}
+                        onClick={()=> navigate("/")}
+                        >Swap It</button>
                     </div>
                 </div>
-                <Footer color="black" />
+
+           <Footer color="black"/>
             </div>
         </>
     )
 }
 
-export default Section5
+export default Section4
+
+
+
+

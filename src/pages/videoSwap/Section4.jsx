@@ -176,7 +176,7 @@ const Section4 = () => {
                             color: "#FFD600",
                             cursor: "pointer"
                         }}
-                        onClick={()=> navigate("/videoswap")}
+                        onClick={()=> navigate("/imageswap")}
                         >{`>>TRY NOW`}</p>
                     </div>
                     <div style={divStyles}>

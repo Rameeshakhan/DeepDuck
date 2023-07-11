@@ -89,13 +89,14 @@ const Navbar = ( {deepDuckImage, optionColor}) => {
       ) : (
         <>
           <div style={{ flex: '1', textAlign: 'center' }}>
-        <Typography variant="p" style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px" }}>
+        <Typography variant="p" style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px" ,cursor: "pointer"}}
+        onClick={() => navigate("/")}>
         Swap it
       </Typography>
-      <Typography variant="p" style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px" }}>
+      <Typography variant="p" style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px",cursor: "pointer" }}>
         Feature
       </Typography>
-      <Typography variant="p" onClick={()=> navigate("/pricing")} style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px"  }}>
+      <Typography variant="p" onClick={()=> navigate("/pricing")} style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px",cursor: "pointer"  }}>
         Pricing
       </Typography>
           </div>

@@ -102,34 +102,35 @@ const Navbar = ({ deepDuckImage, optionColor }) => {
         <>
           <div style={{ flex: '1', textAlign: 'center' }}>
             <Typography
+            onClick={() => navigate("/")}
               variant="p"
-              style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px" }}
+              style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px",cursor: "pointer" }}
             >
               Swap it
             </Typography>
             <Typography
               variant="p"
-              style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px" }}
+              style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px",cursor: "pointer" }}
             >
               Feature
             </Typography>
             <Typography
               variant="p"
               onClick={() => navigate("/pricing")}
-              style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px" }}
+              style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px",cursor: "pointer" }}
             >
               Pricing
             </Typography>
             <Typography
               variant="p"
               onClick={() => navigate("/gallery")}
-              style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px" }}
+              style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px",cursor: "pointer" }}
             >
               Gallery
             </Typography>
           </div>
           <FaUserCircle size="30px" color="#343434" />
-          <MdArrowDropDown color="#343434" size="30px" onClick={handleDropdownToggle} />
+          <MdArrowDropDown color="#343434" size="30px" style={{marginRight:"90px"}} onClick={handleDropdownToggle} />
           {dropdownVisible && <DropDown />}
         </>
       )}

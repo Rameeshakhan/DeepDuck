@@ -67,8 +67,8 @@ const Policy = () => {
       </button>
       <div
         style={{
-          margin: '66px',
-          padding: '05%',
+          margin: '3% 6%',
+          padding: '04%',
           borderRadius: '20px',
           background: '#1F1F1F',
           color: 'white'

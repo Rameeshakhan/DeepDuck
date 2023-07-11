@@ -66,7 +66,7 @@ const ImageUpload = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowModal(true);
-    }, 10000);
+    }, 90000);
 
     return () => {
       clearTimeout(timer);
@@ -93,8 +93,8 @@ const ImageUpload = () => {
         <div className={styles.side}>
           <h2 className={styles.heading}>Image Swap</h2>
           <h6 className={styles.tyrthhese}>Try These</h6>
-          <img src={video} className={styles.sideelement} height="48px" width="47px" alt="Video" />
-          <img src={gif} className={styles.sideelement} height="48px" width="47px" alt="GIF" />
+          <img src={video} className={styles.sideelement}  alt="Video" />
+          <img src={gif} className={styles.sideelement}  alt="GIF" />
         </div>
         <div className={styles.container}>
           <div className={styles.leftSide}>
