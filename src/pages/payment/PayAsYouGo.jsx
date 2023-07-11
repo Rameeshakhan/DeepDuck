@@ -47,7 +47,8 @@ const navigate = useNavigate()
     backgroundColor: "inherit",
     color: "white",
     fontSize: "28px",
-    float:"right"
+    float:"right",
+    cursor:"pointer"
   }
 
   const heading = {

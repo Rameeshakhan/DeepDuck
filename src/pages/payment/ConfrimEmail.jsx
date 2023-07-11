@@ -38,7 +38,8 @@ const ConfirmEmail = ({ isOpen, onClose }) => {
             fontSize: '28px',
             fontWeight: 'bold',
             cursor: 'pointer',
-            textAlign: "right"
+            textAlign: "right",
+            cursor:"pointer"
         },
     };
 

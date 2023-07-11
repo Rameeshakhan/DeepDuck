@@ -16,9 +16,13 @@ const VideoSwap = () => {
 
                 <div style={{
                     backgroundImage: `url(${backgroudImage})`,
-                    height: "633px",
+                    height: "100vh",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
+                    display: "flex",
+                    // justifyContent: "center",
+                    flexDirection:"column"
+
 
                     // height: "100%" // Add this line
                 }}>

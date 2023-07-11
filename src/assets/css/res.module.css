@@ -136,6 +136,8 @@
 .mainImageSwapDiv {
   background: #B4FFE3;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .section3 {
@@ -208,18 +210,21 @@
   background-position: center;
   margin: 0px;
   background-image: url("../../assets/images/gifSwap-section1.png");
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center */
 }
 
 
-.gifMainSectionPicture{
+.gifMainSectionPicture {
   display: none;
 }
 
-.gifSectionMainSection{
+.gifSectionMainSection {
   color: white;
   display: flex;
   flex-direction: column;
-  width : auto;
+  width: auto;
   width: 500px;
   font-family: Raleway;
   margin: 6%
@@ -413,19 +418,19 @@
     overflow-x: hidden;
   }
 
-  .gifMainSectionPicture{
+  .gifMainSectionPicture {
     display: flex;
     height: 200px;
     width: 300px;
   }
 
-  .gifSectionMainSection{
+  .gifSectionMainSection {
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width : auto;
+    width: auto;
     width: 400px;
     text-align: center;
     font-family: Raleway;
