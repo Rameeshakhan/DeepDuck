@@ -24,7 +24,7 @@ const GifSwap = () => {
                 className={styles.gifSectionMainSection}
                 >
                     <h1>GIF Face Swap</h1>
-                    <p>Swap a face on your favorite GIFS today and be the hero of your text threads!lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
+                    <p>Swap a face on your favorite GIFS today and be the hero of your text threads!lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
                     <button
                     style={{
                         width: "162px",
