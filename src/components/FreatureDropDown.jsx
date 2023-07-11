@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { FaUserCircle } from 'react-icons/fa';
-import { IoMdLogOut } from 'react-icons/io';
-import { RiMoneyDollarCircleFill } from 'react-icons/ri';
 import { useNavigate } from 'react-router-dom';
 
-const DropDown = () => {
+const FeatureDropDown = () => {
   const [isVisible, setIsVisible] = useState(false);
   const dropdownRoot = document.getElementById('dropdown-root');
 
@@ -13,18 +11,19 @@ const DropDown = () => {
 
   const dropdownStyle = {
     position: 'absolute',
-    top: isVisible ? '70px' : '-100%',
-    right: '120px',
+    top: '12%',
+    right: '42%',
     zIndex: 9999,
     height: isVisible ? 'auto' : 0,
-    width: '250px',
+    width: '270px',
     borderRadius: '10px',
     color: 'white',
     background: '#2A2A2C',
     padding: '20px',
     fontFamily: 'Raleway',
     opacity: isVisible ? 1 : 0,
-    transition: 'top 0.3s, height 0.3s, opacity 0.3s',
+    transform: `translateY(${isVisible ? '0' : '-100%'})`,
+    transition: 'opacity 0.3s, transform 0.3s',
   };
 
   useEffect(() => {
@@ -39,38 +38,39 @@ const DropDown = () => {
   };
 
   const options = {
-    background: '#323235',
-    margin: '15px 0px 10px 0px',
+    margin: '5px 0px 5px 0px',
     padding: '10px',
     color: 'white',
-    borderRadius: '5px',
     display: 'flex',
     alignItems: 'center',
     gap: '10px',
     cursor: 'pointer',
+    borderBottom: '1px solid white',
   };
 
   return ReactDOM.createPortal(
     <div style={dropdownStyle} className="dropdown">
-      <div style={header}>
-        <FaUserCircle size="30px" color="grey" />
-        <span>Drop down</span>
-      </div>
-
       <div
         style={options}
-        onClick={() => navigate('/pricing')}
+        onClick={() => navigate('/imageswap')}
       >
-        <RiMoneyDollarCircleFill />
-        Credits 20
+        Image Swap
       </div>
-      <div style={options} onClick={() => navigate('/')}>
-        <IoMdLogOut />
-        Logout
+      <div
+        style={options}
+        onClick={() => navigate('/videoswap')}
+      >
+        Video Swap
+      </div>
+      <div
+        style={options}
+        onClick={() => navigate('/gifswap')}
+      >
+        Gif Swap
       </div>
     </div>,
     dropdownRoot
   );
 };
 
-export default DropDown;
+export default FeatureDropDown;

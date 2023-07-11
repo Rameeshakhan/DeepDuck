@@ -57,7 +57,6 @@ const navigate = useNavigate()
   }
 
   const dollar={
-    fontSize: "40px",
     color: "#FFD600",
     textAlign: "center",
     fontFamily: "Outfit"
@@ -104,7 +103,7 @@ const navigate = useNavigate()
         <h1 style={heading}>  Pay As You Go </h1>
         <p style={{textAlign: "center", margin: "0px", padding:"0px"}} >Credits available for use forever</p>
       <div>
-        <h1 style={dollar}>USD $ 0.998 <span style={span}>/credit</span></h1>
+        <h2 style={dollar}>USD $ 0.998 <span style={span}>/credit</span></h2>
       </div>
       <TableContainer>
       <Table style={tableStyle} aria-label="mui table">

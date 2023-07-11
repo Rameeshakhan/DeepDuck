@@ -5,6 +5,8 @@ import deepDuck from "../../assets/images/deepDuck.png"
 import Section2 from './Section2'
 import Section3 from './Section3'
 import Section4 from './Section4'
+import styles from "../../assets/css/res.module.css"
+import respic from "../../assets/images/resvidpc.png"
 
 const VideoSwap = () => {
     return (
@@ -14,16 +16,9 @@ const VideoSwap = () => {
                 background: "#1A1A1A",
             }}>
 
-                <div style={{
-                    backgroundImage: `url(${backgroudImage})`,
-                    height: "100vh",
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    display: "flex",
-                    flexDirection:"column"
-
-
-                }}>
+                <div 
+                className={styles.videoSwapMainDiv}
+                >
                      <Navbar
                     deepDuckImage={deepDuck}
                     optionColor= "#888888"
@@ -34,7 +29,7 @@ const VideoSwap = () => {
                         flexDirection: "column",
                         alignItems: "center",
                         justifyContent: "center",
-                        marginTop: "15%"
+                        marginTop: "10%"
                     }}>
                         <h1 style={{
                             color: "white",
@@ -68,6 +63,8 @@ const VideoSwap = () => {
                                 borderRadius: "12px",
                                 cursor:"pointer",
                             }}>Try Swap It</button>
+
+                            <img src={respic} className={styles.videoSwapMainDivimage}/>
                     </div>
                 </div>
                 <Section2/>

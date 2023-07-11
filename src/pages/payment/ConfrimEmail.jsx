@@ -16,12 +16,15 @@ const ConfirmEmail = ({ isOpen, onClose }) => {
             opacity: isOpen ? 1 : 0,
             backdropFilter: isOpen ? 'blur(10px)' : 'none',
             transition: 'backdrop-filter 0.3s ease',
+            display: "flex",
+            flexDirection: "column",
+            justifyContent:"center",
         },
         content: {
             position: 'relative',
             border: '1px solid #888',
-            width: '400px',
-            padding: "10px 30px 30px 30px",
+            width: '300px',
+            padding: "20px",
             margin: "10% auto",
             background: 'rgba(255,255, 255, 0.3)',
             backdropFilter: " blur(10px)",
@@ -31,6 +34,7 @@ const ConfirmEmail = ({ isOpen, onClose }) => {
             fontFamily: "Raleway",
             display: "flex",
             flexDirection: "column",
+            justifyContent:"center",
         },
         close: {
             color: '#aaa',
@@ -39,7 +43,6 @@ const ConfirmEmail = ({ isOpen, onClose }) => {
             fontWeight: 'bold',
             cursor: 'pointer',
             textAlign: "right",
-            cursor:"pointer"
         },
     };
 

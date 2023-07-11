@@ -128,8 +128,7 @@ const Section4 = () => {
     const divStyles = {
         margin: "30px",
         padding: "20px 40px",
-        // width: "420px",
-        // flex: 1,
+        width: "auto",
         gap:"0px"
     }
 
@@ -152,13 +151,9 @@ const Section4 = () => {
                 paddingTop: "50px",
                 textAlign: "center",
             }}>
-                <h1 style={{
-                    fontFamily: "Raleway",
-                    fontSize: "25px",
-                    fontWeight: "700",
-                    lineHeight: "34px",
-                    letterSpacing: "0em",
-                }}>Other Exciting Deep Duck Features</h1>
+                <h1 
+                className={styles.headingSec4}
+                >Other Exciting Deep Duck Features</h1>
                 <div 
                 className={styles.gifSection5main}
                 >

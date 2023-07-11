@@ -22,7 +22,7 @@ const Section7 = () => {
                 >
                     <h2>Try It <span style={gradientText}>NOW!!!</span></h2>
                     <div>
-                    <img src={arrow} alt="Arrow" className={styles.section7image} /> 
+                    <img src={arrow} alt="Arrow" className={styles.section7image}height="40px" width="80px"/> 
                     <button 
                     className={styles.section7button}
                     onClick={()=> navigate('/')}

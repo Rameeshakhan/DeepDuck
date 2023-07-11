@@ -14,9 +14,9 @@ const ImageSwap = () => {
   const navigate=useNavigate()
 
   const divStyles = {
-    padding: "08px 50px",
-    margin: "20px",
-    width: "100%",
+    padding: "08px 10px",
+    margin: "10px",
+    // width: "100%",
     display: "flex",
     alignItems: "center",
     // border: "1px solid black",
@@ -44,7 +44,7 @@ const ImageSwap = () => {
               <p style={{
                 fontSize: "14px"
               }}>
-                You’re joking? you’re joking? I can’t believe my eyes! Deep Duck offers 99.9% accuracy on all face swaps.
+                You’re joking? you’re joking? I can’t believe my eyes!Deep Duck offers 99.9% <br/>accuracy on all face swaps.
               </p>
               <button
                 style={{
