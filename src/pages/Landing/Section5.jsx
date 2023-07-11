@@ -35,7 +35,7 @@ const Section5 = () => {
             </div>
             <div className={styles['block-divs']}>
                 <div className={styles.divStyle}>
-                    <img src={Div1Pic} alt="Step 1" />
+                    <img src={Div1Pic} alt="Step 1" height="110" width="130" />
                     <h3 style={headingStyle}>Step 1</h3>
                     <p>Upload your hero image</p>
                 </div>
@@ -43,7 +43,7 @@ const Section5 = () => {
                     <img src={arrow} alt="Arrow" />
                 </div>
                 <div className={styles.divStyle}>
-                    <img src={Div2Pic} alt="Step 2" />
+                    <img src={Div2Pic} alt="Step 2" height="110" width="130" />
                     <h3 style={headingStyle}>Step 2</h3>
                     <p>Upload your base image/Video/Gif</p>
                 </div>
@@ -51,7 +51,7 @@ const Section5 = () => {
                     <img src={arrow} alt="Arrow" />
                 </div>
                 <div className={styles.divStyle}>
-                    <img src={Div3Pic} alt="Step 3" />
+                    <img src={Div3Pic} alt="Step 3" height="110" width="130" />
                     <h3 style={headingStyle}>Step 3</h3>
                     <p>Wait for the AI magic</p>
                 </div>
