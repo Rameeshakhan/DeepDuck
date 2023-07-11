@@ -32,7 +32,6 @@ const ImageUpload = () => {
         setBaseImageUploaded(true);
       };
       reader.readAsDataURL(file);
-      // Reset input
       event.target.value = '';
     }
   };
@@ -69,7 +68,7 @@ const ImageUpload = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowModal(true);
-    }, 90000);
+    }, 10000);
 
     return () => {
       clearTimeout(timer);

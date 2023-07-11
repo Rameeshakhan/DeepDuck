@@ -22,7 +22,7 @@ const ConfirmEmail = ({ isOpen, onClose }) => {
             border: '1px solid #888',
             width: '400px',
             padding: "10px 30px 30px 30px",
-            margin: "8% auto",
+            margin: "10% auto",
             background: 'rgba(255,255, 255, 0.3)',
             backdropFilter: " blur(10px)",
             zIndex: "1",
@@ -30,7 +30,7 @@ const ConfirmEmail = ({ isOpen, onClose }) => {
             color: "white",
             fontFamily: "Raleway",
             display: "flex",
-            flexDirection: "column"
+            flexDirection: "column",
         },
         close: {
             color: '#aaa',

@@ -9,10 +9,11 @@ import {
     Radio,
     Button,
   } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const PayAsYouGo = ({onClose}) => {
   const portalRoot = document.getElementById('modal-root');
-
+const navigate = useNavigate()
   const backdropStyle = {
     position: 'fixed',
     top: 0,
@@ -115,7 +116,11 @@ const PayAsYouGo = ({onClose}) => {
             <TableCell style={cellStyle}>$ 10</TableCell>
             <TableCell style={cellStyle}>1$ /Credit</TableCell>
             <TableCell style={cellStyle}>
-              <Button variant="contained" sx={tableBtn}>
+              <Button 
+              variant="contained" sx={tableBtn}
+              onClick={()=> navigate("/pricing")}
+              >
+              
                 Buy Now
               </Button>
             </TableCell>
@@ -128,7 +133,9 @@ const PayAsYouGo = ({onClose}) => {
             <TableCell style={cellStyle}>$ 20</TableCell>
             <TableCell style={cellStyle}>1$ /Credit</TableCell>
             <TableCell style={cellStyle}>
-              <Button variant="contained" sx={tableBtn}>
+              <Button 
+              variant="contained" sx={tableBtn}
+              onClick={()=> navigate("/pricing")}>
               Buy Now
               </Button>
             </TableCell>
@@ -141,7 +148,9 @@ const PayAsYouGo = ({onClose}) => {
             <TableCell style={cellStyle}>$ 20</TableCell>
             <TableCell style={cellStyle}>1$ /Credit</TableCell>
             <TableCell style={cellStyle}>
-              <Button variant="contained" sx={tableBtn}>
+              <Button 
+              variant="contained" sx={tableBtn}
+              onClick={()=> navigate("/pricing")}>
               Buy Now
               </Button>
             </TableCell>

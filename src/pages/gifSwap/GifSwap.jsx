@@ -36,7 +36,8 @@ const GifSwap = () => {
                         fontSize:"17px",
                         fontWeight: "700",
                         background: "#FFD600",
-                        margin :"20px 0px "
+                        margin :"20px 0px ",
+                        cursor:"pointer",
                     }}
                     onClick={()=> navigate("/gifswap")}
                     >Try Swap It</button>
