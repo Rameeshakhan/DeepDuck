@@ -408,7 +408,8 @@
     background-color: black;
     /* margin: 10px; */
     padding: 10px;
-    background-image: none
+    background-image: none;
+    overflow-x: hidden;
   }
 
   .gifMainSectionPicture{
