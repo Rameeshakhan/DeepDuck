@@ -67,7 +67,8 @@ const VideoSwap = () => {
                                 fontSize: "25px",
                                 border: "none",
                                 outline: "none",
-                                borderRadius: "12px"
+                                borderRadius: "12px",
+                                cursor:"pointer",
                             }}>Try Swap It</button>
                     </div>
                 </div>

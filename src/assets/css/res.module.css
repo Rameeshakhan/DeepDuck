@@ -2,15 +2,14 @@
 
 .section2main {
   background: White;
-  padding: 20px 90px;
-
+  padding: 20px 100px;
   display: flex;
   text-align: left;
 }
 
 .section2image {
-  height: auto;
-  width: auto;
+  height: 330;
+  width: 480;
   margin: auto;
 }
 
@@ -125,12 +124,14 @@
   padding: 20px;
   font-family: Raleway;
   overflow-x: "hidden";
+  align-items: center;
+  justify-content: center;
 }
 
 .imageSwapImage {
   height: 350px;
   width: 450px;
-  margin: 10px auto
+  margin: 10px auto;
 }
 
 .mainImageSwapDiv {

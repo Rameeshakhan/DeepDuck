@@ -64,10 +64,11 @@ const Section2 = () => {
                                     borderRadius: "12px",
                                     color: "white",
                                     fontSize: "17px",
-                                    fontWeight: "700"
+                                    fontWeight: "700",
+                                    cursor: "pointer"
                                 }}
 
-                                onClick={()=> navigate("/imageswap")}
+                                onClick={()=> navigate("/videoswap")}
                             >Try Video Swap</button>
                             <img src={arrow} height="17px" width="60px" className={styles.btnArrow} />
                         </div>

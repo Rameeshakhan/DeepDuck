@@ -14,7 +14,7 @@ const ImageSwap = () => {
   const navigate=useNavigate()
 
   const divStyles = {
-    padding: "08px 30px",
+    padding: "08px 50px",
     margin: "20px",
     width: "100%",
     display: "flex",

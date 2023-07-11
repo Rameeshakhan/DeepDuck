@@ -68,8 +68,8 @@ const Section3 = () => {
                                     cursor: "pointer"
                                 }}
 
-                                onClick={()=> navigate("/imageswap")}
-                            >Try Image Swap</button>
+                                onClick={()=> navigate("/gifswap")}
+                            >Try Gif Swap</button>
                             <img src={arrow} height="17px" width="60px" className={styles.btnArrow} />
                         </div>
                     </div>
