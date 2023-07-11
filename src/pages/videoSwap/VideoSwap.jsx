@@ -20,11 +20,9 @@ const VideoSwap = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     display: "flex",
-                    // justifyContent: "center",
                     flexDirection:"column"
 
 
-                    // height: "100%" // Add this line
                 }}>
                      <Navbar
                     deepDuckImage={deepDuck}
@@ -36,7 +34,7 @@ const VideoSwap = () => {
                         flexDirection: "column",
                         alignItems: "center",
                         justifyContent: "center",
-                        marginTop: "10%"
+                        marginTop: "15%"
                     }}>
                         <h1 style={{
                             color: "white",
