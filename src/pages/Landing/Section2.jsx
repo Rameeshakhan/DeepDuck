@@ -10,11 +10,12 @@ const Section2 = () => {
 
     const divStyles = {
         margin: "10px",
-        padding: "10px 20px 10px 20px",
-        width: "100%",
+        padding: "10px",
+        // width: "100%",
         display: "flex",
         flex: 1,
-        alignItems: "center"
+        alignItems: "center",
+        justifyContent: "center"
     };
 
     return (
@@ -29,6 +30,7 @@ const Section2 = () => {
                         <div style={{
                             display: "flex",
                             gap: "0px", 
+                            
                         }}>
                             <h1>Image Swap</h1>
                             <img src={stick} height="70px" width="41px"/>

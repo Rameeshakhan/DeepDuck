@@ -6,11 +6,14 @@ import { useNavigate } from 'react-router-dom';
 import { FaUserCircle } from "react-icons/fa";
 import { MdArrowDropDown } from "react-icons/md";
 import DropDown from './DropDown';
+import FeatureDropDown from './FreatureDropDown';
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Navbar = ({ deepDuckImage, optionColor }) => {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const isMobile = useMediaQuery('(max-width: 650px)');
+  const [isFeatureDropDownOpen, setIsFeatureDropDownOpen] = useState(false);
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
   const handleToggle = () => {
@@ -19,6 +22,14 @@ const Navbar = ({ deepDuckImage, optionColor }) => {
 
   const handleDropdownToggle = () => {
     setDropdownVisible(!dropdownVisible);
+  };
+
+  const handleFeatureDropDownToggle = () => {
+    setIsFeatureDropDownOpen(!isFeatureDropDownOpen);
+  };
+
+  const closeFeatureDropDown = () => {
+    setIsFeatureDropDownOpen(false);
   };
 
 
@@ -112,11 +123,29 @@ const Navbar = ({ deepDuckImage, optionColor }) => {
               Swap it
             </Typography>
             <Typography
-              variant="p"
-              style={{ fontFamily: 'Raleway', fontSize: '14px', fontWeight: 600, lineHeight: '16px', letterSpacing: '0em', textAlign: 'left', color: optionColor, margin: "0px 20px",cursor: "pointer" }}
-            >
-              Feature
-            </Typography>
+  variant="p"
+  style={{
+    fontFamily: 'Raleway',
+    fontSize: '14px',
+    fontWeight: 600,
+    lineHeight: '16px',
+    letterSpacing: '0em',
+    color: optionColor,
+    margin: "0px 20px",
+    cursor: "pointer",
+    textAlign: "center",
+    display: "inline-flex",
+    alignItems: "center",
+  }}
+  onClick={handleFeatureDropDownToggle}
+>
+  <span style={{ marginRight: "5px" }}>Feature</span>
+  <RiArrowDropDownLine size="24px" />
+</Typography>
+
+            {isFeatureDropDownOpen && (
+              <FeatureDropDown />
+            )}
             <Typography
               variant="p"
               onClick={() => navigate("/pricing")}
