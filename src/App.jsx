@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useEffect}from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Landing from './pages/Landing/Landing'
 import Landing2 from './pages/Landing/Landing2'
@@ -11,11 +11,24 @@ import Policy from './pages/Policy/Policy'
 import ImageUpload from './pages/imageSwap/ImageUpload'
 import Payment from './pages/payment/Payment'
 import Gallery from './pages/Gallery'
+import { useLocation } from 'react-router-dom';
 
+  function ScrollToTop() {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
+    return null;
+  }
 const App = () => {
+
+
   return (
     <div>
       <BrowserRouter>
+       <ScrollToTop/>
         <Routes>
           <Route exact path="/" element={<Landing />} />
           <Route exact path="/main" element={<Landing2 />} />
