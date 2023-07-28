@@ -33,7 +33,7 @@ const SignUp = () => {
                         margin: "5px",
                      }}
                      >
-                     I agree to Terms of service and Privacy policy
+                     I agree to Terms and conditions of service and Privacy policy
                      </span>
                     <button className={styles.button}>Sign up</button>
                     <p 
